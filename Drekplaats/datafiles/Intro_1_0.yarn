@@ -1,0 +1,23 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1292,197
+__PrivCrochet_tags: 
+title: Start
+---
+You had a feeling that your time had come before the rain started.
+The world is plagued by an eternal rain, which preceded the floods.
+You've known the rain for a few years now.
+It persists with a pressure that you have adapted to ignore.
+<<jump Node>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1585,205
+__PrivCrochet_tags: 
+title: Node
+---
+It is time to gather all of your belongings and make a change.
+You pull together some food and a single tree sapling.
+This tree seed is *poisonous to predators* but will serve as your new home.
+That is, if you have enough crushed seashell to fertilize the soil first.
+And if you do not starve before you reach your destination.
+===

@@ -1,0 +1,143 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 84,-52
+__PrivCrochet_tags: 
+title: Start
+---
+The muddy grounds reveals roots of what used to be a healthy giant oak.
+It's top and trunk long sunk into the murky earth below.
+The bottom flares out to reveal a dry rotted interior where a large figure looms over a campfire.
+<<jump Node>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 401,-59
+__PrivCrochet_tags: 
+title: Node
+---
+Ox-Warrior: I was wondering when you might show, haha!
+<<set $RevealCreature to 1>>
+Ox-Warrior: Come come! I'll scoot so you can warm your bones...
+-> Warm your bones
+    <<jump Node_2>>
+-> Politely refuse
+    <<jump Node_3>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 685,-56
+__PrivCrochet_tags: 
+title: Node_2
+---
+<<set $ChangeLuck to 1>>
+You hear the large figure shuffle about as you saunter on over next to the warmth of the campfire.
+A respite from the never ending rain, you relish in it's comforting embrace.
+The light of the fire revealing a healthy sized ox warrior.
+<<jump Node_6>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 682,190
+__PrivCrochet_tags: 
+title: Node_3
+---
+<<set $NoVisit to 1>>
+You shake your head sheepishly, not wanting to be stuck in one place too long.
+In response the large creatures outline deflates in a heavy exhale.
+<<jump Node_4>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 687,458
+__PrivCrochet_tags: 
+title: Node_4
+---
+Ox-Warrior: That's fine, I understand you're busy. At least take this to keep your strength.
+Ox-Warrior: Hehe... who knows? You may become stronger than I.
+<<jump Node_5>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 974,455
+__PrivCrochet_tags: 
+title: Node_5
+---
+<<set $CostFood to -2>>
+He steps forward into the light of the flickering campfire, tossing you a bundled cloth filled with apples.
+<<jump Node_11>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 946,-67
+__PrivCrochet_tags: 
+title: Node_6
+---
+Ox-Warrior: Nice right? I built it myself.
+Ox-Warrior: Figured I'd rest a bit before the rain lets up.
+Ox-Warrior: You must be famished. I got just the thing.
+<<jump Node_7>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1230,-62
+__PrivCrochet_tags: 
+title: Node_7
+---
+The warrior rummages through his equipment to give you a hefty cloth bundle of food.
+His scale armor rustles a bit every time he moves.
+-> Accept
+    <<jump Node_8>>
+-> Decline
+    <<jump Node_12>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1539,-69
+__PrivCrochet_tags: 
+title: Node_8
+---
+<<set $CostFood to -3>>
+You accept the gift the upbeat stranger has to offer.
+When you unwrap the cloth, it reveals to you fresh steamed buns.
+A warm delight in these cold wet lands.
+The Ox gives you a once over across the campfire as you inspect your gift.
+<<jump Node_9>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1542,190
+__PrivCrochet_tags: 
+title: Node_9
+---
+Ox-Warrior: I'm undecided on where to go now.
+Ox-Warrior: That mountain looks like a promising place to get a good view of things.
+Ox-Warrior: But on the other hand, I always wanted to make snow cones...
+<<jump Node_10>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1538,459
+__PrivCrochet_tags: 
+title: Node_10
+---
+He points his hooves in opposite directions, one place leading up the mountain, the other leading towards the glacial wall near the sea.
+<<jump Node_11>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1241,756
+__PrivCrochet_tags: 
+title: Node_11
+---
+As you gather your strength to leave, he calls out to you one last time.
+Ox-Warrior: My name's Dural, I hope we meet again in better circumstances.
+Ox-Warrior: And when we do, perhaps somewhere more dry? HA!
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1230,195
+__PrivCrochet_tags: 
+title: Node_12
+---
+You wave your hand in refusal to the gift.
+You aren't sure if this will cost you later on.
+It's best not to make debts with strangers.
+<<jump Node_13>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1236,455
+__PrivCrochet_tags: 
+title: Node_13
+---
+Ox-Warrior: You sure? Well, if you insist.
+Ox-Warrior: Take as long as you need to get warmed up, it'll get you right as rain for journeys to come! Get it? Hehe...
+<<jump Node_11>>
+===

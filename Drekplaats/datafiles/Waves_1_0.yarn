@@ -1,0 +1,31 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 784,344
+__PrivCrochet_tags: 
+title: Start
+---
+You're dangerously close to the ocean waves.
+The persistent rain rolls off your head and shoulders.
+You see more and more water crashing around the trees.
+You hold a brave facade and approach the water.
+<<jump Node>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1047,337
+__PrivCrochet_tags: 
+title: Node
+---
+When you reach your hand to touch the water, you immediately get a migraine.
+You hold your head and buckle out of impulse as your eyes stay shut.
+<<jump Node_2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1315,338
+__PrivCrochet_tags: 
+title: Node_2
+---
+You take a minute to breath and steady yourself.
+As you slowly open your eyes, the wet ground under you reveals your feet.
+The waves are ahead of you again, a distance further away than it was last.
+You approach the waves again.
+===

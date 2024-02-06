@@ -1,0 +1,104 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -50,-50
+__PrivCrochet_tags: 
+title: Start
+---
+You climb a craggy mountain as you feel the ocean water nearly tickle your feet.
+Hurriedly, you climb up the slope as fast as possible.
+Deeply exhausted, you pull yourself as high as your legs can go.
+<<jump Node>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 258,-40
+__PrivCrochet_tags: 
+title: Node
+---
+Eventually, when you next look back, you're high above what used to be treetops.
+The ocean has swallowed nearly everything, except for a massive floating glacier very far away.
+You see what few deciduous treetops remain above water but the rest is a chaotic maelstrom that you want no part.
+<<if $Shells > 9>>
+    <<if $KeyFertilizer > 0>>
+        <<jump Node_2>>
+    <<endif>>
+    <<jump Node_3>>
+<<endif>>
+<<if $KeyFertilizer > 0>>
+    <<jump Node_4>>
+<<endif>>
+<<jump Node_5>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -177,384
+__PrivCrochet_tags: 
+title: Node_2
+---
+You feel prepared and confidently return to your work at hand.
+You treat the soil with the fertilizer and mulched shells.
+After a painstaking process, you delicately hold the tree sapling in your sore hands.
+You plant it underneath and wait...
+<<jump Node_6>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 106,378
+__PrivCrochet_tags: 
+title: Node_3
+---
+You evaluate the soil and look to see what kind of treatment it needs.
+It feels too dry and devoid of the microorganisms necessary to grow substantial life.
+You're certain that you can get the soil prepared if you find some fertilizer first.
+<<jump Node_7>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 411,377
+__PrivCrochet_tags: 
+title: Node_4
+---
+You evaluate the soil and look to see what kind of treatment it needs.
+With your fertilizer, you do an initial check and taste the dry dirt.
+As a professional dirt connoisseur, you're certain that the acidic taste is not imaginary.
+You need to somehow acquire more shells to mulch and fix the acidity.
+<<jump Node_7>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 708,376
+__PrivCrochet_tags: 
+title: Node_5
+---
+You look around you and are dismayed by the dryness of the gravel like dirt.
+You are above the rain clouds where the water does not reach, a necessity to not drown overnight.
+You will need both fertilizer and mulch produced from shells.
+With the tides ebbing in and out, perhaps you can find it across the woods?
+But it would be terrifying to get swept away by the ocean current...
+Perhaps it would be safest to stay close if you can.
+<<jump Node_7>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -181,662
+__PrivCrochet_tags: 
+title: Node_6
+---
+<<set $Win to 1>>
+There is a slight tremor to the ground as oaken bark slowly reaches towards the stars.
+You glance down the mountain, the rain pouring harder than ever before, and the landscape underneath is sunken forever.
+Your tree grows another foot and produces a golden apple fruit. You eat it warmly.
+It will take some time for this new adjustment but you've successfully escaped your problems.
+You take a nap next to the growing trunk as the heavens pour wrathfully beneath and the stars above shine.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 410,687
+__PrivCrochet_tags: 
+title: Node_7
+---
+You watch the ocean tides and hope for it to part and return whence it came.
+As the rain carves channels through the mountain, you fall asleep and hibernate.
+<<jump Node_8>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 718,687
+__PrivCrochet_tags: 
+title: Node_8
+---
+<<set $CostTime to 1>>
+When you wake up the next day, you see a little bit less ocean than yesterday and begin to make your way down.
+===

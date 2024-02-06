@@ -1,0 +1,169 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 590,64
+__PrivCrochet_tags: 
+title: Start
+---
+Grandpa: My, my. You have come to visit sweet old me again?
+<<if $Food > 0>>
+    <<jump Node>>
+<<endif>>
+<<jump Node_2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 875,70
+__PrivCrochet_tags: 
+title: Node
+---
+Grandpa: And? Have you brought an apple today too?
+-> Offer an apple (-1 food)
+    <<jump Node_3>>
+-> Choose violence
+    <<jump Node_4>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 870,340
+__PrivCrochet_tags: 
+title: Node_2
+---
+Grandpa: And? Have you brought an apple today too?
+-> Choose violence
+    <<jump Node_4>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1176,68
+__PrivCrochet_tags: 
+title: Node_3
+---
+<<set $CostFood to 1>>
+Grandpa: Good boy.
+<<jump Node_13>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1169,340
+__PrivCrochet_tags: 
+title: Node_4
+---
+You steel yourself and resolve to end this once and for all.
+<<if $KeyKnife < 1>>
+    <<if $KeyGun < 1>>
+        <<jump Node_5>>
+    <<else>>
+        <<jump Node_7>>
+    <<endif>>
+<<else>>
+    <<if $KeyGun < 1>>
+        <<jump Node_6>>
+    <<endif>>
+<<endif>>
+<<jump Node_8>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 663,735
+__PrivCrochet_tags: 
+title: Node_5
+---
+You lunge at the monster and meet a hail of fur, scale, and muscle.
+-> Flail
+    <<jump Node_11>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 981,722
+__PrivCrochet_tags: 
+title: Node_6
+---
+You lunge at the monster and meet a hail of fur, scale, and muscle.
+-> Use the knife <<if $KeyKnife > 0>>
+    <<jump Node_9>>
+-> Flail
+    <<jump Node_11>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1657,721
+__PrivCrochet_tags: 
+title: Node_8
+---
+You lunge at the monster and meet a hail of fur, scale, and muscle.
+-> Use the knife <<if $KeyKnife > 0>>
+    <<jump Node_9>>
+-> Use the gun (50% chance) <<if $KeyGun > 0>>
+-> Flail
+    <<jump Node_11>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1321,727
+__PrivCrochet_tags: 
+title: Node_7
+---
+You lunge at the monster and meet a hail of fur, scale, and muscle.
+-> Use the gun (50% chance) <<if $KeyGun > 0>>
+-> Flail
+    <<jump Node_11>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 840,1175
+__PrivCrochet_tags: 
+title: Node_9
+---
+<<set $KeyFertilizer to 1>>
+In a great flurry, up is down and eventually the beast lays defeated.
+You decapitate them and keep their head to fertilize the soil.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1166,1170
+__PrivCrochet_tags: 
+title: Node_10
+---
+In retrospect, ferrets usually don't know how to use guns.
+<<if $Random > 10>>
+    <<jump Node_9>>
+<<endif>>
+<<jump Node_12>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1460,1169
+__PrivCrochet_tags: 
+title: Node_11
+---
+<<set $Dead to 1>>
+Your fearlessness is unrivaled as you fight death head on.
+But perhaps if you were more prepared, you would have told the tale too.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1170,1429
+__PrivCrochet_tags: 
+title: Node_12
+---
+<<set $Dead to 1>>
+You never know what happened.
+In the afterlife, you momentarily realize perhaps you had a misfire.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1498,67
+__PrivCrochet_tags: 
+title: Node_13
+---
+As it holds the apple in your hand, a giant wet tongue licks up the side of you.
+The apple is taken to an unseen location.
+<<jump Node_14>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1831,70
+__PrivCrochet_tags: 
+title: Node_14
+---
+Grandpa: I have to leave this place too. When it floods, not even I will survive.
+Grandpa: Do you understand yet? You must go west, and push through the ocean.
+Grandpa: Your willpower can recede the tides if you can stay strong.
+Grandpa: But no one is immune to what will happen when the rain collects its rent.
+Grandpa: Goodbye, lovely.
+<<jump Node_15>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1835,355
+__PrivCrochet_tags: 
+title: Node_15
+---
+You swear the rain falls heavier as its back arches like a tower.
+It then plunges into the dirt and its slender form digs into a deep crater.
+===

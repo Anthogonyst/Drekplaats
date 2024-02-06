@@ -1,0 +1,104 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 889,251
+__PrivCrochet_tags: 
+title: Start
+---
+You struggle to find footing as you fight forward in this damp earth.
+With a little effort, you find a trail of smoke ahead.
+Marching forward you see a familiar large figure waving to you.
+<<set $RevealCreature to 1>>
+The Ox warrior sits huddled under a makeshift canvas.
+His campfire is weaker than before, but a comforting sight nonetheless.
+<<jump Node>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1178,259
+__PrivCrochet_tags: 
+title: Node
+---
+Dural: Haha, still carrying strong I see?
+Dural: It's good to see a familiar face. Come sit a while...
+It could be the environment itself, but you swear you feel a hint of forlornness to his demeanor.
+Do you approach?
+-> Approach
+    <<jump Node_2>>
+-> Leave
+    <<jump Node_3>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1466,254
+__PrivCrochet_tags: 
+title: Node_2
+---
+<<set $ChangeLuck to 1>>
+You gladly accept the invitation of warmth and respite, but it wasn't your imagination before.
+As you approach the firelight to see your burly friend visage, you not that he seems thinner.
+His eyes are darker and his face is sallow.
+And he seems to be nursing a wound near his hoof.
+You give him a look of concern.
+<<jump Node_5>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1182,541
+__PrivCrochet_tags: 
+title: Node_3
+---
+<<set $FoodCost to -1>>
+You feel you've been distracted long enough, so you decide to journey onwards.
+<<jump Node_4>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1180,1082
+__PrivCrochet_tags: 
+title: Node_4
+---
+Before you leave, the ox tosses you a familiar sack, albeit a little lighter than before.
+Dural: I know your journey is long, friend. It's not a dry towel, but I hope this helps.
+Dural: May we meet again soon!
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1475,538
+__PrivCrochet_tags: 
+title: Node_5
+---
+Dural: Hm? Oh, this? Tis nothing that keeping dry wouldn't fix, it's my fault really.
+Dural: Oh but look at you! You seem to have seen some things, I'm sure of it.
+Dural: What I wouldn't give for this rain to let up.
+Dural: I was just about to grab a bite, would you share a meal with me?
+-> Share a meal
+    <<jump Node_6>>
+-> Leave
+    <<jump Node_3>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1796,537
+__PrivCrochet_tags: 
+title: Node_6
+---
+<<set $FoodCost to -4>>
+<<set $ChangeLuck to 2>>
+He offers you a fresh serving of steamed buns paired with apples. It's simply delicious.
+<<jump Node_7>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1797,820
+__PrivCrochet_tags: 
+title: Node_7
+---
+Dural: My family taught me how to make those.
+Dural: I may appear strong, but it's family and friends that gives somebody real strength!
+Dural: I hope I give you strength friend, for the journey to come.
+<<jump Node_8>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1799,1087
+__PrivCrochet_tags: 
+title: Node_8
+---
+He gives a smile to you, trying to hide his forlorn features behind it.
+But after a while, he stares off into the distance.
+You think it might be the rain, he doesn't seem to fond of it.
+Best not to pry...
+<<jump Node_4>>
+===

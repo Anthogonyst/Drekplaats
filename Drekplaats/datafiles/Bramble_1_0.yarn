@@ -1,0 +1,28 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 747,335
+__PrivCrochet_tags: 
+title: Start
+---
+You find yourself pushing through dense underbrush.
+The thorny brambles prove no ward to you, albeit it is time consuming.
+<<if $Random > 11>>
+    <<jump Node>>
+<<endif>>
+<<jump Node_2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1028,341
+__PrivCrochet_tags: 
+title: Node
+---
+<<set $CostFood to -2>>
+However, it is quite easy to find a niche with bountiful eggs and small prey.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1018,614
+__PrivCrochet_tags: 
+title: Node_2
+---
+Every moment feels like a prickle of doubt but you steel yourself and reach the end.
+===

@@ -1,0 +1,82 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1258,577
+__PrivCrochet_tags: 
+title: Start
+---
+As you continue forward, you find a familiar trail of smoke just off to the distance.
+This time, larger than any before.
+You can't help but feel a bit of excitement to have a chance of meeting the friendly ox warrior associated with these smoke trails.
+What would you like to do?
+-> Investigate
+    <<jump Node>>
+-> Continue your journey
+    <<jump Node_2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1555,581
+__PrivCrochet_tags: 
+title: Node
+---
+As you approach closer to the source, you find an odd monolithic structure.
+Huge in stature and covered in moss, it sits alone in this wet landscape.
+Carved into it is a set of stairs that lead up to what appears to be a giant brass brazier lit ablaze.
+The flame's bright oranges and yellows flicker violently against the rain, but still hold regardless.
+There seems to be no sign of a tender or occupant. What do you do?
+-> Warm your bones
+    <<jump Node_3>>
+-> Leave
+    <<jump Node_4>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1258,870
+__PrivCrochet_tags: 
+title: Node_2
+---
+A flame that large might attract the wrong kind of attention.
+You feel it's best to move on...
+As you steer away from the smoke trail, you can't help but wonder what might've made such a large fire in this unrelenting rain...?
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1856,581
+__PrivCrochet_tags: 
+title: Node_3
+---
+The warmth from the brazier is just what you need.
+The large mythical flame roaring against the elements keeping the place rather dry.
+A port in the storm, you think to yourself.
+The only thing missing is your friend, the ox.
+As you bask in the radiating heat, you notice a pair of horns peaking out over the edge down below.
+<<set $RevealCreature to 1>>
+You feel a hint of warm familiarity as you go to greet your friend, only to find a waterlogged corpse dawning the same ox's clothes.
+His armor heavily rusted and his flesh washed away from him, only his barnacle infested skeleton remains.
+As a twinge of sadness fills your heart, it is pushed aside when a glowing, pulsing object makes itself visible from his remaining hooved hand.
+It gives a warmth and presence similar to the warrior whenever you encountered him before. Do you take it?
+-> Take it
+    <<jump Node_5>>
+-> Leave
+    <<jump Node_4>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1560,876
+__PrivCrochet_tags: 
+title: Node_4
+---
+Despite the mystery behind this structure, you feel a bout of sadness enveloping you.
+It's best not to linger...
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1860,875
+__PrivCrochet_tags: 
+title: Node_5
+---
+<<set $KeyOxLocket to 1>>
+You carefully head down the stairs to what used to be the strong Ox Warrior.
+A gregarious and cheerful character, reduced to a husk of his former self.
+But even in death, he leaves you a gift for your journey.
+As you take the bright warm object from his hoof, the brazier above loses its flame.
+Instead, the warmth you felt is embedded in what appears to be a locket made of amber.
+It contains a tiny relief of a small Ox with nubby horns and familiar features, perhaps a calf?
+Regardless, you feel much stronger now after receiving it. Strong as an Ox even...
+<<jump Node_4>>
+===

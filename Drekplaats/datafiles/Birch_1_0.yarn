@@ -1,0 +1,32 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 852,490
+__PrivCrochet_tags: 
+title: Start
+---
+The dense patchwork of black and white birch trees unsettles you.
+Every now and then, you see a spot that resembles tissue or an eye.
+<<if $Random > 6>>
+    <<jump Node>>
+<<endif>>
+<<jump Node_2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1135,491
+__PrivCrochet_tags: 
+title: Node
+---
+You quell an itching sensation and press on steadily.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1136,773
+__PrivCrochet_tags: 
+title: Node_2
+---
+<<set $CostFood to 1>>
+<<set $CostTime to 1>>
+You start to feel dizzy and break into a cold sweat.
+You break into a sprint to reach the clearing faster.
+As your anxiety spikes, you engorge your provisions wastefully.
+An early nap, and you choose to stay asleep into next afternoon.
+===

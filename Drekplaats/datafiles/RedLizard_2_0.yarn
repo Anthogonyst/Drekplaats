@@ -1,0 +1,95 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -93,-251
+__PrivCrochet_tags: 
+title: Start
+---
+You have found the den of the belligerent creature.
+You approach cautiously, wary of its temperment.
+<<set $RevealCreature to 1>>
+<<jump Node>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 214,45
+__PrivCrochet_tags: 
+title: Node_1
+---
+Grandpa: The prey approaches... Your time is growing short, little creature.
+Grandpa: Why have you come back to this one, knowing this to be true?
+<<if $Food > 0>>
+    <<jump Node_2>>
+<<endif>>
+<<jump Node_3>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 541,42
+__PrivCrochet_tags: 
+title: Node_2
+---
+Grandpa: And have you brought food with you?
+-> Offer an apple (-1 food) <<if $Food > 0>>
+    <<jump Node_4>>
+-> Not today
+    <<jump Node_5>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 544,327
+__PrivCrochet_tags: 
+title: Node_3
+---
+Grandpa: And have you brought food with you?
+-> Not today
+    <<jump Node_5>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 823,47
+__PrivCrochet_tags: 
+title: Node_4
+---
+<<set $CostFood to 1>>
+The creature reaches out and you briefly recognize a webbed hand.
+The prize taken, it munches thoughtfully and then intones.
+<<jump Node_7>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 821,322
+__PrivCrochet_tags: 
+title: Node_5
+---
+Grandpa: Foul creature, then why are you here? Is my counsel worth nothing?
+Grandpa: I oughta smite you where you stand for wasting my time.
+<<jump Node_6>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -92,58
+__PrivCrochet_tags: 
+title: Node
+---
+Its eyes and head seem to twist in dissimilar rates.
+<<jump Node_1>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 832,573
+__PrivCrochet_tags: 
+title: Node_6
+---
+You flee as fast as you can, before the scaled beast resolves upon its words.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1110,53
+__PrivCrochet_tags: 
+title: Node_7
+---
+Grandpa: Creatures of habit like yourself exist because of their environment.
+Grandpa: Just as you continue to run, the tides and rain follow you in pursuit.
+Grandpa: Perhaps then, you'll find that the ocean too is merely your own reflection.
+Grandpa: Except for the rain, you have four weeks to chase the waves or flee.
+<<jump Node_8>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1108,316
+__PrivCrochet_tags: 
+title: Node_8
+---
+The unusual poem keeps you struck in confusion as you miss the creature leave.
+===

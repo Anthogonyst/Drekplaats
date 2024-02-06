@@ -1,0 +1,47 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 742,177
+__PrivCrochet_tags: 
+title: Start
+---
+The canopy overhead obscures the light but does little to stop nature.
+The rain beats unevenly everywhere and you're afraid what will happen when the ocean takes this land.
+Migratory birds caw overhead, you think they must consider themselves lucky.
+<<if $Random > 15>>
+    <<jump Node>>
+<<endif>>
+<<if $Random < 5>>
+    <<jump Node_3>>
+<<endif>>
+<<jump Node_2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1028,181
+__PrivCrochet_tags: 
+title: Node
+---
+<<set $CostShells to -3>>
+You find a particularly deep valley where the rainwater has not escaped.
+You sift through the wet soil for the valuable shells.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1034,444
+__PrivCrochet_tags: 
+title: Node_2
+---
+<<set $CostFood to -1>>
+<<set $CostShells to -1>>
+The land is always a reliable source for bounty, as you grab and go.
+The rich soil reminds you that you need fertilizer to move your tree sapling.
+When the ground is too acidic, you need to mulch a base in addition.
+You recall this, and the constant water has distorted the land. You pick up a seashell.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 732,446
+__PrivCrochet_tags: 
+title: Node_3
+---
+<<set $CostTime to 1>>
+A terrifying roar breaks in the distance, one you recognize.
+You break into a sprint and tear into the nearest shelter you know.
+===

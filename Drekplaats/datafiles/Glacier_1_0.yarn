@@ -1,0 +1,266 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 887,164
+__PrivCrochet_tags: 
+title: Start
+---
+You climb up the glacier even though it is freezing and devoid.
+You struggle severely and nearly fall multiple times.
+But you pick yourself back up each time.
+<<jump NodeS_1>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1179,162
+__PrivCrochet_tags: 
+title: NodeS_1
+---
+When you finally breach the plateau, you search for something.
+This altitude, rising high above the clouds is obscured by snow.
+You approach a light.
+<<jump NodeS_2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1466,160
+__PrivCrochet_tags: 
+title: NodeS_2
+---
+There is a low rumbling sound of a continuous flicking flame.
+It's much like that of a dry wood campfire mixed with tectonic shifting.
+It is all encompassing and ever-present.
+<<jump NodeS_3>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1768,159
+__PrivCrochet_tags: 
+title: NodeS_3
+---
+-> Who are you?
+    <<jump Node_1>>
+-> Did you cause all of this to happen?
+    <<jump Node_2>>
+-> How long have you been here?
+    <<jump Node_3>>
+-> Why would you do this?
+    <<jump Node_4>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1165,529
+__PrivCrochet_tags: 
+title: Node_1
+---
+...
+-> Did you cause all of this to happen?
+    <<jump Node_1_2>>
+-> How long have you been here?
+    <<jump Node_1_3>>
+-> Why would you do this?
+    <<jump Node_1_4>>
+-> Retire
+    <<jump NodeF>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1481,524
+__PrivCrochet_tags: 
+title: Node_2
+---
+...
+-> Who are you?
+    <<jump Node_1_2>>
+-> How long have you been here?
+    <<jump Node_2_3>>
+-> Why would you do this?
+    <<jump Node_2_4>>
+-> Retire
+    <<jump NodeF>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1781,525
+__PrivCrochet_tags: 
+title: Node_3
+---
+...
+-> Who are you?
+    <<jump Node_1_3>>
+-> Did you cause all of this to happen?
+    <<jump Node_2_3>>
+-> Why would you do this?
+    <<jump Node_3_4>>
+-> Retire
+    <<jump NodeF>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2087,525
+__PrivCrochet_tags: 
+title: Node_4
+---
+...
+-> Who are you?
+    <<jump Node_1_4>>
+-> Did you cause all of this to happen?
+    <<jump Node_2_4>>
+-> How long have you been here?
+    <<jump Node_3_4>>
+-> Retire
+    <<jump NodeF>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2617,1355
+__PrivCrochet_tags: 
+title: Node_1_2
+---
+...
+-> How long have you been here?
+    <<jump Node_1_2_3>>
+-> Why would you do this?
+    <<jump Node_1_2_4>>
+-> Retire
+    <<jump NodeF>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2341,1574
+__PrivCrochet_tags: 
+title: Node_1_3
+---
+...
+-> Did you cause all of this to happen?
+    <<jump Node_1_2_3>>
+-> Why would you do this?
+    <<jump Node_1_3_4>>
+-> Retire
+    <<jump NodeF>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2055,1742
+__PrivCrochet_tags: 
+title: Node_1_4
+---
+...
+-> Did you cause all of this to happen?
+    <<jump Node_1_2_4>>
+-> How long have you been here?
+    <<jump Node_1_3_4>>
+-> Retire
+    <<jump NodeF>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1814,1907
+__PrivCrochet_tags: 
+title: Node_2_3
+---
+...
+-> Who are you?
+    <<jump Node_1_2_3>>
+-> Why would you do this?
+    <<jump Node_2_3_4>>
+-> Retire
+    <<jump NodeF>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1541,2083
+__PrivCrochet_tags: 
+title: Node_2_4
+---
+...
+-> Who are you?
+    <<jump Node_1_2_4>>
+-> How long have you been here?
+    <<jump Node_2_3_4>>
+-> Retire
+    <<jump NodeF>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1249,2266
+__PrivCrochet_tags: 
+title: Node_3_4
+---
+...
+-> Who are you?
+    <<jump Node_1_3_4>>
+-> Did you cause all of this to happen?
+    <<jump Node_2_3_4>>
+-> Retire
+    <<jump NodeF>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 454,1898
+__PrivCrochet_tags: 
+title: Node_1_2_3
+---
+...
+-> Why would you do this?
+    <<jump Node_1_2_3_4>>
+-> Retire
+    <<jump NodeF>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 318,1563
+__PrivCrochet_tags: 
+title: Node_1_2_4
+---
+..
+-> How long have you been here?
+    <<jump Node_1_2_3_4>>
+-> Retire
+    <<jump NodeF>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 209,1288
+__PrivCrochet_tags: 
+title: Node_1_3_4
+---
+...
+-> Did you cause all of this to happen?
+    <<jump Node_1_2_3_4>>
+-> Retire
+    <<jump NodeF>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 55,973
+__PrivCrochet_tags: 
+title: Node_2_3_4
+---
+...
+-> Who are you?
+    <<jump Node_1_2_3_4>>
+-> Retire
+    <<jump NodeF>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1001,949
+__PrivCrochet_tags: 
+title: NodeF
+---
+The wind on top of the glacier howls bitterly at this aerie.
+<<if $Waited > 0>>
+    <<jump Node_TE>>
+<<endif>>
+<<jump Node_FE>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 620,721
+__PrivCrochet_tags: 
+title: Node_1_2_3_4
+---
+...
+You're out of breath and your throat is parched.
+Their silence is absolute.
+-> Retire
+    <<jump NodeF>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 612,437
+__PrivCrochet_tags: 
+title: Node_TE
+---
+<<set $Win to 1>>
+You sit down next to the kindred spirit.
+It is unbearably hot but you accept the warmth.
+And remain there, you did forever after.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 888,436
+__PrivCrochet_tags: 
+title: Node_FE
+---
+You turn around and descend back down the glacier.
+===

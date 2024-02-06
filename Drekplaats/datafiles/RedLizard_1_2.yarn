@@ -1,0 +1,165 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1736,121
+__PrivCrochet_tags: 
+title: Start
+---
+You find yourself a dense forest and the dead branches underneath constant.
+Every step crunches to your demise and then you hear a buffeting crash.
+<<jump Node>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1454,108
+__PrivCrochet_tags: 
+title: Node
+---
+???: My, my, what's this? A lost little creature this far away from home?
+???: You must be awfully exhuasted... And a ripe prey for the plucking.
+<<jump Node_2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1448,440
+__PrivCrochet_tags: 
+title: Node_2
+---
+<<set $RevealCreature to 1>>
+A heinous display of spikes and teeth comes into the limelight.
+Their large spine is arched and jagged as it curls behind into the darkness.
+<<if $Food >= 1>>
+    <<jump Node_3>>
+<<endif>>
+<<jump Node_3_1>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1718,410
+__PrivCrochet_tags: 
+title: Node_3
+---
+Grandpa: You're carrying an awful lot of baggage. It will only weigh you down...
+Grandpa: Feed me one of your apples, or else I will eat you where you stand.
+-> Offer an apple (-1 food) <<if $Food >= 1>>
+    <<jump Node_4>>
+-> Try to sneak away (30% chance)
+    <<jump Node_Sneak>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2088,428
+__PrivCrochet_tags: 
+title: Node_4
+---
+The creature swipes your food with an insurmountable speed.
+You watch it devour the apple in two rapturous and greedy bites.
+<<if $Food >= 2>>
+    <<jump Node_5>>
+<<endif>>
+<<jump Node_5_1>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1960,743
+__PrivCrochet_tags: 
+title: Node_Sneak
+---
+You look for a chance to escape...
+<<if $Random > 6>>
+    <<jump Node_Lose>>
+<<else>>
+    <<jump Node_Win>>
+<<endif>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2520,752
+__PrivCrochet_tags: 
+title: Node_Sneak_Easy
+---
+You look for a chance to escape...
+<<set $CostFood to 1>>
+<<if $Random > 14>>
+    <<jump Node_Lose>>
+<<else>>
+    <<jump Node_Win>>
+<<endif>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2003,1059
+__PrivCrochet_tags: 
+title: Node_Win
+---
+You toss a handful of branches away towards the side.
+The creature twists and you catch an elongated furry body whirl past you.
+<<set $RevealCreature to 0>>
+It rushes into the darkness. Perhaps the creature was simply blind after all.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2513,1052
+__PrivCrochet_tags: 
+title: Node_Lose
+---
+You sprint in the opposite direction as fast as you could.
+<<set $Dead to 1>>
+It is only a few moments before you hear crushing bone.
+You don't feel anything as you fade out.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2487,434
+__PrivCrochet_tags: 
+title: Node_5
+---
+Grandpa: Why have you come so far, little creature?
+Grandpa: You should know that running away will only get you so far.
+Grandpa: The ocean is not your problem...
+Grandpa: But I'm still hungry, give me one more apple...
+-> Offer another apple (-1 food) <<if $Food >= 2>>
+    <<jump Node_6>>
+-> Try to sneak away (70% chance)
+    <<jump Node_Sneak_Easy>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2812,419
+__PrivCrochet_tags: 
+title: Node_6
+---
+<<set $CostFood to 2>>
+Perhaps settled down, the creature this time eats and savors its spoil.
+You watch quietly and wait for it to speak again.
+<<jump Node_7>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2814,753
+__PrivCrochet_tags: 
+title: Node_7
+---
+Grandpa: You have noticed the eternal rain that plagues this land.
+Grandpa: In four weeks, the torrent will take their rent and destroy everything.
+Grandpa: If you hadn't made your choice by then, nothing will save you.
+<<jump Node_8>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2828,1024
+__PrivCrochet_tags: 
+title: Node_8
+---
+You hear a dozen legs move in unison as its head twists into the darkness.
+It is gone and you are alone again.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1694,724
+__PrivCrochet_tags: 
+title: Node_3_1
+---
+Grandpa: You're carrying an awful lot of baggage. It will only weigh you down...
+Grandpa: Feed me one of your apples, or else I will eat you where you stand.
+-> Try to sneak away (30% chance)
+    <<jump Node_Sneak>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2244,708
+__PrivCrochet_tags: 
+title: Node_5_1
+---
+Grandpa: Why have you come so far, little creature?
+Grandpa: You should know that running away will only get you so far.
+Grandpa: The ocean is not your problem...
+Grandpa: But I'm still hungry, give me one more apple...
+-> Try to sneak away (70% chance)
+    <<jump Node_Sneak_Easy>>
+===
