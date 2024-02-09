@@ -1,0 +1,12 @@
+/*
+!.gitignore
+!README.md
+!/assets
+!/Drekplaats
+/Drekplaats/*
+!/Drekplaats/datafiles
+!/Drekplaats/objects
+/Drekplaats/objects/*
+!/Drekplaats/objects/init_chatterbox
+!/Drekplaats/objects/init_gm
+!/Drekplaats/objects/init_music
