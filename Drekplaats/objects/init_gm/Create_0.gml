@@ -5,15 +5,6 @@ if (! variable_global_exists("myGM")) {
 	global.myGM = ds_map_create();
 }
 
-// Init
-aqua = ds_map_create();
-global.myGM[? "aqua"] = aqua;
-
-// Data
-global.myGM[? "aqua"][$ "score"] = 0;
-global.myGM[? "aqua"][$ "money"] = 300;
-global.myGM[? "aqua"][$ "fish"] = 2;
-
 drek = ds_map_create();
 global.myGM[? "drek"] = drek;
 
@@ -41,6 +32,10 @@ global.myGM[? "drek"][? "day"] = 0;
 global.myGM[? "drek"][? "daytick"] = true;
 
 var _rand = current_second;
+
+// Map data determines where creatures live on the world map to prepare the VN scene
+// Values 0-15 corresponds to the top left corner down, for columns 1, 3, 5, 7
+// Values 16-24 corresponds to the connecting middle columns 2, 4, 6
 drekmap = [
 	"Waves", "Marsh", "Marsh", "Bramble",
 	"Waves", "Marsh", "Bramble", "Woods",
@@ -51,6 +46,8 @@ drekmap = [
 	"Bramble", "Home", "Birch",
 	"Birch", "Bramble", "Woods"
 ];
+
+// Add red lizard to rightmost column
 var _liz = [12, 13, 14, 15]
 var _redliz = _liz[_rand % 4];
 drekmap[@ _redliz] = "RedLizard";
@@ -67,10 +64,12 @@ global.myGM[? "drek"][? "chatpos"] = chatpos;
 global.myGM[? "drek"][? "chatlen"] = 0;
 global.myGM[? "drek"][? "chatleft"] = 0;
 
+// Initialized at map choice to contain chatterbox data and background sprite
 global.myGM[? "drek"][? "chosen"] = "Intro";
 global.myGM[? "drek"][? "chosenData"] = "Intro";
 global.myGM[? "drek"][? "chosenBg"] = spr_treehouse;
 
+// Connect map data in drekmap (above) to sprite index for the background in each environmental scene
 drekbg = ds_map_create();
 drekbg[? "Birch"] = spr_birchwood;
 drekbg[? "Bramble"] = spr_congested;
@@ -85,6 +84,7 @@ drekbg[? "Dead"] = spr_wavecrash;
 
 global.myGM[? "drek"][? "drekbg"] = drekbg;
 
+// Connect map data in drekmap (above) to world map sprite index (see spr_drekplaats_ng_strip12)
 drekenv = ds_map_create();
 drekenv[? "Birch"] = 4;
 drekenv[? "Bramble"] = 1;
@@ -97,6 +97,7 @@ drekenv[? "Dead"] = 11;
 
 global.myGM[? "drek"][? "drekenv"] = drekenv;
 
+// Connect map data in drekmap (above) to Chatterbox chat alias (see init_chatterbox::Create.gml)
 drekscav = ds_map_create();
 drekscav[? "Birch"] = "Birch";
 drekscav[? "Bramble"] = "Bramble";
@@ -111,18 +112,24 @@ drekscav[? "Dead"] = "Intro";
 
 global.myGM[? "drek"][? "drekscav"] = drekscav;
 
-drekcreature = ds_map_create();
-drekcreature[? "Dural"] = 0;
-drekcreature[? "RedLizard"] = 1;
-
-global.myGM[? "drek"][? "drekcreature"] = drekcreature;
-
+// Connect map data in drekmap (above) to the sound effect index played by their character
 voiceCreature = ds_map_create();
 voiceCreature[? "Dural"] = snd_dural;
 voiceCreature[? "RedLizard"] = snd_liz;
 
 global.myGM[? "drek"][? "voiceCreature"] = voiceCreature;
 
+// Connect map data in drekmap (above) to drekchat grid (below) for each character's chatterbox
+drekcreature = ds_map_create();
+drekcreature[? "Dural"] = 0;
+drekcreature[? "RedLizard"] = 1;
+
+global.myGM[? "drek"][? "drekcreature"] = drekcreature;
+
+// Connect map data in drekmap (above) to character's chatterbox wheree days are experienced in sequence
+// drekchat[0, n] contains the number of visits the player has experienced
+// For [1, n]  [2, n]  [3, n]  it contains the chatterbox alias corresponding to visits 1/2/3
+// drekchat[4, n] contains the background sprite for the character
 drekchat = ds_grid_create(5, 1 + 1);
 
 // Dural
